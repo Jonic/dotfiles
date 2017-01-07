@@ -1,26 +1,17 @@
 # Oh My ZSH Stuff
-DEFAULT_USER="Jonic"
+DEFAULT_USER="jonic"
 DISABLE_CORRECTION="true"
 HISTFILE="$HOME/.zsh_history"
 plugins=(bower git node npm osx jump)
 ZSH=$HOME/.oh-my-zsh
-ZSH_CUSTOM=$HOME/'Dropbox/Sync/oh-my-zsh/'
+ZSH_CUSTOM=$HOME/'.dotfiles/oh-my-zsh/'
 ZSH_THEME='agnoster'
 
 source $ZSH/oh-my-zsh.sh
-source ~/Dropbox/Sync/oh-my-zsh/k.sh
-
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+source ~/.dotfiles/oh-my-zsh/k.sh
 
 export PATH=$PATH:$HOME/npm/bin
 export PATH=$PATH:$HOME/.composer/vendor/bin
-
-# path for postgres.app
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-
-# postgres.app seems to need this
-export PGHOST=localhost
 
 # https://gist.github.com/olivierlacan/1195304
 git config --global --unset-all core.editor
@@ -66,7 +57,6 @@ export NVM_DIR="/Users/Jonic/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 ssh-add
-clear
 
 # Some functions
 function diediedie {
