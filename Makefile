@@ -1,16 +1,16 @@
 install:
 	echo "Removing old config files"
 
-	rm ~/.gemrc
-	rm ~/.gitconfig
-	rm ~/.hyper.js
-	rm ~/.jshintrc
-	rm ~/.npmrc
-	rm ~/.ruby-version
-	rm ~/.ssh/config
-	rm ~/.vimrc
-	rm ~/.zshenv
-	rm ~/.zshrc
+	rm -f ~/.gemrc
+	rm -f ~/.gitconfig
+	rm -f ~/.hyper.js
+	rm -f ~/.jshintrc
+	rm -f ~/.npmrc
+	rm -f ~/.ruby-version
+	rm -f ~/.ssh/config
+	rm -f ~/.vimrc
+	rm -f ~/.zshenv
+	rm -f ~/.zshrc
 
 	echo "Linking new config files"
 
