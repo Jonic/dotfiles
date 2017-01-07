@@ -13,6 +13,9 @@ source ~/.dotfiles/oh-my-zsh/k.sh
 export PATH=$PATH:$HOME/npm/bin
 export PATH=$PATH:$HOME/.composer/vendor/bin
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
 # https://gist.github.com/olivierlacan/1195304
 git config --global --unset-all core.editor
 git config --global alias.stats 'shortlog -sn'
