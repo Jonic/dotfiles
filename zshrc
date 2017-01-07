@@ -13,9 +13,6 @@ source ~/.dotfiles/oh-my-zsh/k.sh
 export PATH=$PATH:$HOME/npm/bin
 export PATH=$PATH:$HOME/.composer/vendor/bin
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
 # https://gist.github.com/olivierlacan/1195304
 git config --global --unset-all core.editor
 git config --global alias.stats 'shortlog -sn'
@@ -56,8 +53,9 @@ if [[ -e /usr/local/share/chruby ]]; then
   fi
 fi
 
-export NVM_DIR="/Users/Jonic/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="/Users/jonic/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+nvm use --delete-prefix v7.4.0 --silent
 
 ssh-add
 
@@ -74,3 +72,5 @@ function work {
     j $1 && vu && vs
   fi
 }
+
+clear
