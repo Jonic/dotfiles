@@ -14,13 +14,13 @@ install:
 
 	echo "Linking new config files"
 
-	ln -s ./gemrc        ~/.gemrc
-	ln -s ./gitconfig    ~/.gitconfig
-	ln -s ./hyper.js     ~/.hyper.js
-	ln -s ./jshintrc     ~/.jshintrc
-	ln -s ./npmrc        ~/.npmrc
-	ln -s ./ruby-version ~/.ruby-version
-	ln -s ./ssh-config   ~/.ssh/config
-	ln -s ./vimrc        ~/.vimrc
-	ln -s ./zshenv       ~/.zshenv
-	ln -s ./zshrc        ~/.zshrc
+	ln -s ~/.dotfiles/gemrc        ~/.gemrc
+	ln -s ~/.dotfiles/gitconfig    ~/.gitconfig
+	ln -s ~/.dotfiles/hyper.js     ~/.hyper.js
+	ln -s ~/.dotfiles/jshintrc     ~/.jshintrc
+	ln -s ~/.dotfiles/npmrc        ~/.npmrc
+	ln -s ~/.dotfiles/ruby-version ~/.ruby-version
+	ln -s ~/.dotfiles/ssh-config   ~/.ssh/config
+	ln -s ~/.dotfiles/vimrc        ~/.vimrc
+	ln -s ~/.dotfiles/zshenv       ~/.zshenv
+	ln -s ~/.dotfiles/zshrc        ~/.zshrc
