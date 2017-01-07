@@ -1,0 +1,74 @@
+
+ServerAliveInterval 100
+
+# Code Club Rails Server
+
+Host sandbox-uk
+  HostName sandbox.codeclub.org.uk
+  ForwardAgent yes
+  User deploy
+
+Host staging-uk
+  HostName staging.codeclub.org.uk
+  ForwardAgent yes
+  User deploy
+
+Host production-uk
+  HostName www.codeclub.org.uk
+  ForwardAgent yes
+  User deploy
+
+Host bmo-uk
+  HostName 5.28.62.97
+  ForwardAgent yes
+  User deploy
+
+# Code Club Styleguide
+
+Host styleguide-world
+  HostName styleguide.codeclubworld.org
+  ForwardAgent yes
+  User deploy
+
+# Code Club Ops
+
+Host ccops
+  HostName ccops1.codeclubworld.org
+  ForwardAgent yes
+  User ops
+
+# Old Bytemark Box
+
+Host roboboogie
+  ForwardAgent yes
+  HostName uk-roboboogie-production.production.codeclub.uk0.bigv.io
+  Port 1080
+  User deploy
+
+Host roboboogie-jonic
+  ForwardAgent yes
+  HostName uk-roboboogie-production.production.codeclub.uk0.bigv.io
+  Port 1080
+  User jonic
+
+Host training
+  ForwardAgent yes
+  HostName 213.138.113.83
+  User forge
+
+# My Servers
+
+Host 100yen
+  ForwardAgent yes
+  HostName 178.62.90.89
+  User jonic
+
+Host pi
+  ForwardAgent yes
+  HostName 192.168.1.100
+  User pi
+
+Host pi-usb
+  ForwardAgent yes
+  HostName raspberrypi.local
+  User pi
